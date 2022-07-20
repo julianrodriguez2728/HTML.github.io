@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="area">
+    <nav id="navbar">
+        <ul class="menu">
+    <header id="header">
+        <h1>HTML</h1>
+    </header>
+                <li><a class="nav-link" href="#introducción">introducción</a></li>
+                <li><a class="nav-link" href="#elementos">Elementos</a></li>
+                <li><a class="nav-link" href="#atributos">Atributos</a></li>
+                <li><a class="nav-link" href="#nociones_basicas">Nociones basicas</a></li>
+                <li><a class="nav-link" href="#editores_de_texto">Editores de texto</a></li>
+                <li><a class="nav-link" href="#etiquetas">Etiquetas</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+        <section class="main-section" id="introducción">
+            <header>Introducción</header>
+            <article>
+                <p>Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. </p>
+                <p>.El lenguaje HTML basa su filosofía de desarrollo en la diferenciación. Para añadir un elemento externo a la página (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante texto. </p>
+            </article>
+        </section>
+        <section class="main-section" id="elementos">
+            <header>Elementos</header>
+            <p>Elementos:
+                Los elementos son la estructura básica de HTML. Los elementos tienen dos propiedades básicas: atributos y contenido. Cada atributo y contenido tiene ciertas restricciones para que se considere válido al documento HTML.</p>
+                <p>Un elemento generalmente tiene una etiqueta de inicio (por ejemplo, <code>< nombre_de_elemento></code> ) y una etiqueta de cierre (por ejemplo, <code>< /nombre-de-elemento></code> ).</p>
+        </section>
+        <section class="main-section" id="atributos">
+            <header>Atributos</header>
+            <p>Atributos:
+                En su mayoría los atributos de un elemento son pares nombre-valor, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples, aunque ciertos tipos de valores pueden estar sin comillas en HTML (pero no en XHTML).
+                </p>
+                <p>De todas maneras, dejar los valores sin comillas es considerado poco seguro.11​ En contraste con los pares nombre-elemento, hay algunos atributos que afectan al elemento simplemente por su presencia12​ (tal como el atributo ismap para el elemento img).</p>
+        </section>
+        <section class="main-section" id="nociones_basicas">
+            <header>Nociones Basicas</header>
+            <p>Nociones básicas de HTML:
+                El lenguaje HTML puede ser creado y editado con cualquier editor de textos básico, como puede ser Gedit en GNU/Linux, el Bloc de notas de Windows, o cualquier otro editor que admita texto sin formato como GNU Emacs, Microsoft Wordpad, TextPad, Vim, Notepad++, entre otros.
+                Toda etiqueta se identifica porque está encerrada entre los signos menor que y mayor que <code>[<>]</code></p>
+                <p>Existe otro tipo de editores HTML llamados WYSIWYM que dan más importancia al contenido y al significado que a la apariencia visual. Entre los objetivos que tienen estos editores es la separación del contenido y la presentación, fundamental en el diseño web.
+                </p>
+        </section>
+        <section class="main-section" id="editores_de_texto">
+            <header>Editores de Texto</header>
+            <p>Editores de texto:
+                Para el desarrollo web los programadores se auxilian de un editor de texto. Estos normalmente están hechos con el fin de facilitar la programación.</p>
+                <p>Existen actualmente muchos, como son estos: Notepad++, Adobe Dreamweaver, Sublime text, entre otros.</p>
+        </section>
+        <section class="main-section" id="etiquetas">
+            <header>Etiquetas</header>
+            <ul class="etiquetas">
+                <h2><code>< HTML></code></h2>
+                <li class="lista-etiquetas">
+                    define el inicio del documento HTML, le indica al navegador que lo que viene a continuación debe ser interpretado como código HTML. Esto es así de facto, ya que en teoría lo que define el tipo de documento es el DOCTYPE, que significa la palabra justo tras DOCTYPE el tag de raíz.
+                </li>
+                <h2><code>SCRIPT</code></h2>
+                <li class="lista-etiquetas">
+                    incrusta un script en una web, o llama a uno mediante src="url del script". Se recomienda incluir el tipo MIME en el atributo type, en el caso de JavaScript text/javascript
+                </li>
+                <h2><CODE>< Head></CODE></h2>
+                <li class="lista-etiquetas">
+                    define la cabecera del documento HTML; esta cabecera suele contener información sobre el documento que no se muestra directamente al usuario como, por ejemplo, el título de la ventana del navegador. Dentro de la cabecera <head> es posible encontrar:
+                </li>
+                <h2><code>< title></code></h2>
+                <li class="lista-etiquetas">
+                    define el título de la página. Por lo general, el título aparece en la barra de título encima de la ventana.
+                </li>
+                <h2><code>< link></code></h2>
+                <li class="lista-etiquetas">
+                    para vincular el sitio a hojas de estilo o iconos. Por ejemplo: <code>link rel="stylesheet" href="/style.css" type="text/css"</code>
+                </li>
+            </ul>
+        </section>
+        <!-- SECTIONS-5 -->
+    </main>
+</body>
+</html>

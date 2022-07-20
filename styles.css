@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* GRID AREA */
+
+@media (min-width: 1200px){
+    #area{
+        display: grid;
+        grid-template-areas: 
+        "menu cuerpo"
+        ;
+        grid-template-columns: 10% auto;
+    }
+    nav{
+        grid-area: menu;
+        border-right: 1px solid black;
+        background-color: rgb(0, 0, 0);
+    }
+    main{
+        grid-area: cuerpo;
+        background-color: rgb(52, 45, 59);
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(213, 212, 212);
+        border-bottom: 2px solid white;
+    }
+    .menu{
+        border-top: 3px solid rgb(255, 255, 255);
+        border-right: 3px solid white;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        display: grid;
+        height: 100vh; 
+        width: 10%;
+    }
+    li{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-link{
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+    }
+    .nav-link:hover{
+        font-size: 18px;
+        transition: all 0.2s;
+    }
+    .nav-link:active{
+        color: rgb(225, 247, 204);
+    }
+
+    /* MAIN */
+    header{
+        color: wheat;
+        font-size: 35px;
+        padding: 20px;
+        font-weight: bold;
+        text-align: start;
+        border-bottom: 2px solid white;
+    }
+    article{
+        margin: 15px;
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        color: rgb(202, 225, 225);
+    }
+    .main-section{
+        margin: 60px;
+    }
+    .etiquetas{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        text-align: start;
+        color: rgb(202, 225, 225);
+        font-size: 20px;
+    }
+    .lista-etiquetas{
+        text-align: center;
+    }
+    h2{
+        color: rgb(161, 161, 161);
+        margin: 20px;
+    }
+
+}
